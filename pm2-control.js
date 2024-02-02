@@ -11,8 +11,14 @@ function pm2list(req, res) {
         list.forEach(value => {
             console.log(value.pid, value.name)
             processList.push({
+                pmId: value.pm_id,
                 pid: value.pid,
-                name: value.name
+                name: value.name,
+                status: value.pm2_env.status,
+                memory: value.monit.memory,
+                cpu: value.monit.cpu,
+                lifetime: value.pm2_env.pm_uptime,
+                restart: value.pm2_env.restart_time
             })
         })
 
