@@ -27,19 +27,11 @@ function deploySipwanDashboard(req, res) {
             return
         }
 
-        if (stderr) {
-            res.status(500).json({
-                status: "error",
-                message: "Script error",
-                detail: stderr
-            })
-            return
-        }
-
         res.status(200).json({
             status: "success",
             message: "Start sipwan-dashboard success",
-            detail: stdout
+            detail: stdout,
+            scriptOutput: stderr
         })
     })
 }
