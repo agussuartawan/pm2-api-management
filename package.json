@@ -1,0 +1,19 @@
+{
+    "name": "pm2-management-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "agus",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "3.2.4"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "pm2": "^5.3.1"
+    }
+}
