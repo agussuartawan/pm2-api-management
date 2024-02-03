@@ -33,7 +33,9 @@ function deploySipwanDashboard(req, res) {
             detail: stdout,
             scriptOutput: stderr
         })
+
     })
+    console.log("[DEPLOY] Script to deploy sipwan-dashboard running...")
 }
 
 export default deploySipwanDashboard
