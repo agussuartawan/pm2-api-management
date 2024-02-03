@@ -9,7 +9,6 @@ function pm2list(req, res) {
         }
 
         list.forEach(value => {
-            console.log(value.pid, value.name)
             processList.push({
                 pmId: value.pm_id,
                 pid: value.pid,
