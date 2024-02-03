@@ -5,7 +5,7 @@ function pm2list(req, res) {
     const processList = []
     pm2.list((err, list) => {
         if (list.length === 0) {
-            console.log("Process not found")
+            console.log("[PM2 LIST] Process not found")
         }
 
         list.forEach(value => {
@@ -22,7 +22,6 @@ function pm2list(req, res) {
             })
         })
 
-        console.log(processList)
         return res.send(processList)
     })
 }
